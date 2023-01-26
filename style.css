@@ -1,9 +1,13 @@
+:root {
+  --gap: 40px 40px;
+}
+
 .container {
   /* margin-top: 1rem; */
   padding: 15px 30px 15px;
   display: grid;
   /* grid-template-columns: repeat(12, 1fr); */
-  gap: 14px 16px;
+  gap: var(--gap);
 }
 
 .container .block {
@@ -50,6 +54,9 @@
 }
 
 @media (max-width: 768px) {
+  :root {
+    --gap: 14px 16px;
+  }
   .container {
     padding: 15px 20px 15px;
   }
