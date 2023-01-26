@@ -1,5 +1,6 @@
 :root {
-  --gap: 40px 40px;
+  --gap: 14px 16px;
+  /* --unit: 1.5rem; */
 }
 
 .container {
@@ -10,11 +11,16 @@
   gap: var(--gap);
 }
 
-.container .block {
+.block {
   padding: 32px;
   /* text-align: center; */
   /* content: " "; */
 }
+
+/* .block {
+  --unit: 1.5rem;
+  padding: var(--unit);
+} */
 
 .item-1 {
   grid-column: 1/4;
